@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<div class="app">
+  <nav class="main-nav">
+    <h1 class="logo">
+      <img src="/logo.svg" alt="Ember Library" />
+      <span class="sr-only">
+        Ember Library
+      </span>
+    </h1>
+    <ul>
+      <li><a href="">Authors</a></li>
+      <li><a href="">Books</a></li>
+    </ul>
+  </nav>
 
-{{outlet}}
+  <main class="app-content">
+    {{outlet}}
+  </main>
+</div>
