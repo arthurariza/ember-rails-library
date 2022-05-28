@@ -1,3 +1,6 @@
 <li>
-  <a href="#"><strong>{{last}}</strong> {{first}} </a>
+  <LinkTo @route="author.details" @model={{author}}>
+    <strong>{{author.last}}</strong>
+    {{author.first}}
+  </LinkTo>
 </li>
