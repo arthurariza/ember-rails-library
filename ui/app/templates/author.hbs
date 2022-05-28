@@ -12,9 +12,10 @@
 
     <ul class="collection">
       {{#each model.data as |author|}}
-        <li>
-          <a href="#">{{author.attributes.first}} {{author.attributes.last}}</a>
-        </li>
+        <AuthorListItem
+          @first={{author.attributes.first}}
+          @last={{author.attributes.last}}
+        />
 
       {{/each}}
     </ul>
