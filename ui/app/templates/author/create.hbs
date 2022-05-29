@@ -1,0 +1,28 @@
+<div class="slide-out-bg"></div>
+
+<div class="slide-out">
+  <div class="slide-out-card">
+    <LinkTo @route="author" class="btn-back">
+      <span class="sr-only">Back</span>
+    </LinkTo>
+
+    <div class="slide-out-heading">
+      <div class="title">
+        <h3>New Author</h3>
+      </div>
+    </div>
+
+    <div class="slide-out-content">
+      <form>
+        <div class="field">
+          <label for="first">First Name: {{first}}</label>
+          <Input @type="text" placeholder="First Name" @value={{first}} />
+        </div>
+        <div class="field">
+          <label for="last">Last Name: {{last}}</label>
+          <Input @type="text" placeholder="Last Name" @value={{last}} />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
